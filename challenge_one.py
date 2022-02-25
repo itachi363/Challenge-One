@@ -12,7 +12,11 @@
 
 
 def reverse_string(string_one):
-    print(f"{string_one}"[::-1])
+    print(f"{string_one}"[::-1]) #reverses string
 
 reverse = reverse_string("Hello")
 
+def capitalize_strings(string_two):
+    print(f"{string_two}")
+
+capitalize = capitalize_strings("hello capital letter.")
