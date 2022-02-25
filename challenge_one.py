@@ -20,3 +20,8 @@ def capitalize_strings(string_two):
     print(f"{string_two}".title())
 
 capitalize_first = capitalize_strings("hello capital letter.")
+
+def compress_string(string_three):
+    print(f"{string_three}")
+
+compression = compress_string("aaaaaaaahhhhhhh!!!!!")
