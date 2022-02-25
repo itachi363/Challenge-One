@@ -17,6 +17,6 @@ def reverse_string(string_one):
 reverse = reverse_string("Hello")
 
 def capitalize_strings(string_two):
-    print(f"{string_two}")
+    print(f"{string_two}".title())
 
-capitalize = capitalize_strings("hello capital letter.")
+capitalize_first = capitalize_strings("hello capital letter.")
