@@ -61,19 +61,22 @@ from itertools import count
 
 # compression = compress_string("aaaabbccc")
 
-user_input = input("enter a Palindrome: ")
+
 
 def palindrome(palindrome_input):
+    palindrome_input = input("enter a Palindrome: ")
     opposite = palindrome_input[::-1]
     is_it_palindrome = False
     while is_it_palindrome == False:
         if palindrome_input == opposite:
-            print("correct")
+            print("Yes it is a palindrome!")
             is_it_palindrome = True
 
         else:
             print("Not a Palindrome, try again.")
+            palindrome_input = input("enter a Palindrome: ")
+            opposite = palindrome_input[::-1]
 
 
 
-pal_check = palindrome(user_input)
+pal_check = palindrome("")
