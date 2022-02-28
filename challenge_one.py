@@ -21,25 +21,25 @@ from itertools import count
 
 
 
-def capitalize_strings(string_two):
-    blank_space = " "
-    final_string = ""
-    for index in range(len(string_two)):
+# def capitalize_strings(string_two):
+#     blank_space = " "
+#     final_string = ""
+#     for index in range(len(string_two)):
 
-        if string_two[index] is blank_space:
-            final_string += string_two[index+1].upper()
+#         if string_two[index] is blank_space:
+#             final_string += string_two[index+1].upper()
             
-        elif(string_two[index] != blank_space):
-            if string_two[index] is ".":
-                print(final_string)
-                break
-            final_string += string_two[index+1]
+#         elif(string_two[index] != blank_space):
+#             if string_two[index] is ".":
+#                 print(final_string)
+#                 break
+#             final_string += string_two[index+1]
 
-        else:
-            print("Error")
+#         else:
+#             print("Error")
 
 
-capitalize_first = capitalize_strings(" hello capital letter.")
+# capitalize_first = capitalize_strings(" hello capital letter.")
 
 
 
@@ -61,10 +61,19 @@ capitalize_first = capitalize_strings(" hello capital letter.")
 
 # compression = compress_string("aaaabbccc")
 
-
+user_input = input("enter a Palindrome: ")
 
 def palindrome(palindrome_input):
+    opposite = palindrome_input[::-1]
+    is_it_palindrome = False
+    while is_it_palindrome == False:
+        if palindrome_input == opposite:
+            print("correct")
+            is_it_palindrome = True
+
+        else:
+            print("Not a Palindrome, try again.")
 
 
 
-pal_check = palindrome()
+pal_check = palindrome(user_input)
