@@ -11,17 +11,60 @@
 
 
 
-def reverse_string(string_one):
-    print(f"{string_one}"[::-1]) #reverses string
+from itertools import count
 
-reverse = reverse_string("Hello")
+
+# def reverse_string(string_one):
+#     print(f"{string_one}"[::-1]) #reverses string
+
+# reverse = reverse_string("Hello")
+
+
 
 def capitalize_strings(string_two):
-    print(f"{string_two}".title())
+    blank_space = " "
+    final_string = ""
+    for index in range(len(string_two)):
 
-capitalize_first = capitalize_strings("hello capital letter.")
+        if string_two[index] is blank_space:
+            final_string += string_two[index+1].upper()
+            
+        elif(string_two[index] != blank_space):
+            if string_two[index] is ".":
+                print(final_string)
+                break
+            final_string += string_two[index+1]
 
-def compress_string(string_three):
-    print(f"{string_three}")
+        else:
+            print("Error")
 
-compression = compress_string("aaaaaaaahhhhhhh!!!!!")
+
+capitalize_first = capitalize_strings(" hello capital letter.")
+
+
+
+# def compress_string(string_three):
+#     letters = string_three
+#     counter = 0
+#     compressed_string = ""
+#     previous_letter = string_three[0]
+#     for current_letter in string_three:
+#         if previous_letter == current_letter:
+#             counter += 1
+#         else:
+#             compressed_string += previous_letter + str(counter)
+#             counter = 1
+#             previous_letter = current_letter
+    
+#     compressed_string += previous_letter + str(counter)
+#     print(f"{compressed_string}")
+
+# compression = compress_string("aaaabbccc")
+
+
+
+def palindrome(palindrome_input):
+
+
+
+pal_check = palindrome()
